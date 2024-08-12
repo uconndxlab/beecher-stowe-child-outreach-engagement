@@ -1,42 +1,59 @@
 /** .scholars-archive is a grid of .person elements */
 .scholars-archive {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1em;
 }
 
 /** .person is a card with a photo, name, and title */
 .person {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   padding: 1em;
   border: 1px solid #ddd;
   border-radius: 5px;
+  position: relative;
 }
 
 .person-image-div {
   width: 100%;
-  height: 200px;
-  overflow: hidden;
   border-radius: 5px;
+  text-align: center;
 }
 
-.person-img {
-  width: 100%;
-  height: 100%;
+.person-image-div img {
+  width: 250px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 5px;
   background-color: #eee;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .person-body {
   margin-top: 1em;
+
 }
 
 .person .email-link {
   display: block;
   margin-top: 1em;
+  /** affix to bottom of .person */
+}
+
+.person .email-link a {
+  color: #0073aa;
+  text-decoration: none;
+  background-color: #000E2F;
+  color:#fff;
+  padding: 15px 10px;
+  border-radius: 5px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.person .email-link a:hover {
+  background-color: #0073aa;
+  color:#fff;
 }
 
 /* Container for the filter form */
@@ -49,6 +66,41 @@
     background-color: #f7f7f7;
     border: 1px solid #ddd;
     border-radius: 8px;
+    align-items: center;
+}
+
+.person-job-title {
+  text-transform: uppercase;
+  font-size:14px;
+  color:#000E2F;
+  font-weight: bold;
+}
+
+.person-school-college {
+  font-size:12px;
+  color: #444;;
+  text-transform: uppercase;
+}
+
+.person-areas-of-scholarship {
+  font-size:12px;
+  color: #444;
+}
+
+.person-areas-of-scholarship h6 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.person-areas-of-scholarship span.area {
+  background-color: #f7f7f7;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 
 /* Individual filter item */
@@ -72,7 +124,6 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
-    font-size: 1rem;
     color: #333;
 }
 
@@ -87,6 +138,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: flex-start;
+    margin-top:30px;
 }
 
 /* Button hover effect */
@@ -105,4 +157,18 @@
         flex: 1 1 100%;
         max-width: none;
     }
+}
+
+.scholars-directory {
+  padding-top:40px;
+}
+
+.scholars-directory #overview {
+  margin-bottom: 20px;
+}
+
+.scholars-archive .person-title {
+  font-size: 1.2em;
+
+  line-height: 1.2em;
 }
