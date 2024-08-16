@@ -172,3 +172,24 @@
 
   line-height: 1.2em;
 }
+
+
+/** improve the pagination **/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-numbers {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.pagination .page-numbers.current {
+  background-color: #0074a2;
+  color: #fff;
+}
+

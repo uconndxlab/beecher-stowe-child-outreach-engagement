@@ -109,7 +109,7 @@ if (!empty($_GET['school_college'])) {
 $args = array(
     'post_type' => 'oe_scholar',
     'meta_query' => $meta_query,
-    'posts_per_page' => 10,
+    'posts_per_page' => 12,
     'paged' => get_query_var('paged') ? get_query_var('paged') : 1
 );
 
@@ -139,7 +139,10 @@ if ($query->have_posts()) : ?>
                     <p class="person-school-college navy-color"><?php echo $school_college; ?></p>
                     <div class="person-areas-of-scholarship navy-color">
                         <?php foreach ($areas_of_scholarship as $area) : ?>
-                            <span class="area"><?php echo $area; ?></span>
+                           <a href="<?php echo get_post_type_archive_link('oe_scholar') . '?area_of_scholarship=' . urlencode($area); ?>">
+                                <span class="area"><?php echo $area; ?></span>
+                            </a> 
+
                         <?php endforeach; ?>
                     </div>
                 </div>
