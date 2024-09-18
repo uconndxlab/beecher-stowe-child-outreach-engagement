@@ -44,6 +44,9 @@ wp_enqueue_style('archive-oe_scholar', get_stylesheet_directory_uri() . '/archiv
                             }
                             return $carry;
                         }, []));
+
+                        //order the areas alphabetically
+                        sort($areas);
                         foreach ($areas as $area) {
                             $selected = (isset($_GET['area_of_scholarship']) && $_GET['area_of_scholarship'] === $area) ? 'selected' : '';
                             echo '<option value="' . esc_attr($area) . '" ' . $selected . '>' . esc_html($area) . '</option>';
@@ -72,10 +75,28 @@ wp_enqueue_style('archive-oe_scholar', get_stylesheet_directory_uri() . '/archiv
                         $schools = array_unique(array_map(function ($post_id) {
                             return get_post_meta($post_id, 'schoolcollege', true);
                         }, $schools));
+
+                        //order the schools alphabetically
+                        sort($schools);
+
                         foreach ($schools as $school) {
-                            $selected = (isset($_GET['school_college']) && $_GET['school_college'] === $school) ? 'selected' : '';
+                            // Get the user input value and encode the ampersand
+                            $user_input = isset($_GET['school_college']) ? $_GET['school_college'] : '';
+
+                            // if the %26 is in the $_GET['school_college'] value, replace it with the encoded value
+                            $encoded_input = str_replace('&', 'and', $user_input);
+                            if ($encoded_input == "College of Liberal Arts and Sciences") {
+                                $user_input = "College of Liberal Arts &amp; Sciences";
+                            }
+                            
+                        
+                        
+                            // Check if either the raw or encoded values match
+                            $selected = ($user_input === $school || $encoded_input === $school) ? 'selected' : '';
+                        
                             echo '<option value="' . esc_attr($school) . '" ' . $selected . '>' . esc_html($school) . '</option>';
                         }
+                        
                         ?>
                     </select>
                 </div>
@@ -88,6 +109,7 @@ wp_enqueue_style('archive-oe_scholar', get_stylesheet_directory_uri() . '/archiv
 </div>
 
 <?php
+
 $meta_query = array('relation' => 'AND');
 
 if (!empty($_GET['area_of_scholarship'])) {
@@ -99,9 +121,17 @@ if (!empty($_GET['area_of_scholarship'])) {
 }
 
 if (!empty($_GET['school_college'])) {
+    
+
+
+    $school_college_value = $_GET['school_college'];
+
+    // Encode the ampersand to its HTML entity or URL-encoded equivalent
+    $encoded_value = str_replace('&', '&amp;', $school_college_value);
+    
     $meta_query[] = array(
         'key' => 'schoolcollege',
-        'value' => sanitize_text_field($_GET['school_college']),
+        'value' => $encoded_value,
         'compare' => 'LIKE'
     );
 }

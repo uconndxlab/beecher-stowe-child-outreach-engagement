@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  font-family: "Libre Baskerville", serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Libre Baskerville", serif;
+}
+
+#footers #mega-footer .widget .widget-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event {
+  font-family: "Libre Baskerville", serif;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event .uc-cal-event-date .uc-cal-event-month {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500 !important;
+}
+
+#page #content .panel-grid .widget .uctoday-plugin .uctoday-cell-title {
+  font-family: "Libre Baskerville", serif;
+}
+#page #content .panel-grid .panel-grid-cell .uctoday-plugin .uctoday-title-container .uctoday-cell-date {
+  font-family: "Libre Baskerville", serif;
+}
+
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .panel-heading .panel-title a {
+  font-family: "Libre Baskerville", serif;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget.widget_dpe_fp_widget ul .hentry {
+  font-weight: 500;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal.uc-listcal .uc-cal-list .uc-cal-item .uc-cal-event .uc-cal-event-date {
+  font-weight: 500 !important;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal .uc-cal-event {
+  font-family: "Libre Baskerville", serif !important;
+}
+
+#page-sidebar .widget .uc-cal .uc-cal-event {
+  font-family: "Libre Baskerville", serif !important;
+}
+
+body.page-template-page-blank .siteorigin-panels-stretch .widget_widget_sp_image .widget_sp_image-description .cap-wrap p span {
+  font-family: "Libre Baskerville", serif;
+}
+
+blockquote {
+  font-family: "Libre Baskerville", serif;
+}
+blockquote:before, blockquote:after {
+  font-family: "Libre Baskerville", serif;
+}
+
+entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption {
+  font-family: "Libre Baskerville", serif;
+}
+
+.modal .modal-event-title {
+  font-family: "Libre Baskerville", serif !important;
+}
+
+body {
+  font-size: 15px;
+}
+
+#masthead #nav-wrapper .navbar #primary-nav .nav .dropdown-menu {
+  font-size: 15px;
+}
+
+#page #content .widget .btn {
+  font-size: 14px;
+}
+#page #content .widget .btn.btn-lowercase {
+  font-size: 15px;
+}
+
+#page-az #main input {
+  font-size: 14px;
+}
+
+.in-page-list .dropdown-menu {
+  font-size: 15px;
+}
+
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal.uc-iconcal .uc-cal-item .uc-cal-event-title {
+  font-size: 15px !important;
+}
+
+#footers #mega-footer .widget .uc-cal.uc-iconcal .uc-cal-item .uc-cal-event-title {
+  font-size: 15px !important;
+}
+
+#footers #mega-footer .widget .widget-title {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+#masthead #site-title fieldset .form-control {
+  font-size: 14px;
+  top: 1px;
+  position: relative;
+}
+
+#page #content .entry-content p {
+  line-height: 1.8em;
+}

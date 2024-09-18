@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+#footers #mega-footer .widget .widget-title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event {
+  font-family: "Source Sans Pro", sans-serif;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event .uc-cal-event-date .uc-cal-event-month {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500 !important;
+}
+
+#page #content .panel-grid .widget .uctoday-plugin .uctoday-cell-title {
+  font-family: "Oswald", sans-serif;
+}
+#page #content .panel-grid .panel-grid-cell .uctoday-plugin .uctoday-title-container .uctoday-cell-date {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .panel-heading .panel-title a {
+  font-family: "Oswald", sans-serif;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget.widget_dpe_fp_widget ul .hentry {
+  font-weight: 500;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal.uc-listcal .uc-cal-list .uc-cal-item .uc-cal-event .uc-cal-event-date {
+  font-weight: 500 !important;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal .uc-cal-event {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+#page-sidebar .widget .uc-cal .uc-cal-event {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+body.page-template-page-blank .siteorigin-panels-stretch .widget_widget_sp_image .widget_sp_image-description .cap-wrap p span {
+  font-family: "Oswald", sans-serif;
+}
+
+blockquote {
+  font-family: "Oswald", sans-serif;
+}
+blockquote:before, blockquote:after {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.modal .modal-event-title {
+  font-family: "Oswald", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 400;
+}
+
+.entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption {
+  font-weight: 400;
+}
+.entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption h1, .entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption h2 {
+  font-weight: 400;
+}
+
+#page-sidebar .widget .widget-head .widget-title {
+  font-weight: 400;
+}
+
+.page-template-page-pagebuilder-cards #page-page-builder-cards #primary #main .page .entry-content .widget h3.widget-title {
+  font-weight: 400;
+}
+
+#page #content .panel-grid .infographic-row .widget .widget-title {
+  font-weight: 400;
+}
+
+#page #content .panel-grid .widget .uctoday-plugin .uctoday-title-container .uctoday-cell-title {
+  font-weight: 400;
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+#footers #mega-footer .widget .widget-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event {
+  font-family: "Open Sans", sans-serif;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event .uc-cal-event-date .uc-cal-event-month {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600 !important;
+}
+
+#page #content .panel-grid .widget .uctoday-plugin .uctoday-cell-title {
+  font-family: "DM Serif Display", serif;
+}
+#page #content .panel-grid .panel-grid-cell .uctoday-plugin .uctoday-title-container .uctoday-cell-date {
+  font-family: "Open Sans", sans-serif;
+}
+
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .panel-heading .panel-title a {
+  font-family: "DM Serif Display", serif;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget.widget_dpe_fp_widget ul .hentry {
+  font-weight: 600;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal.uc-listcal .uc-cal-list .uc-cal-item .uc-cal-event .uc-cal-event-date {
+  font-weight: 600 !important;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal .uc-cal-event {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+#page-sidebar .widget .uc-cal .uc-cal-event {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+body.page-template-page-blank .siteorigin-panels-stretch .widget_widget_sp_image .widget_sp_image-description .cap-wrap p span {
+  font-family: "DM Serif Display", serif;
+}
+
+blockquote {
+  font-family: "DM Serif Display", serif;
+}
+blockquote:before, blockquote:after {
+  font-family: "Open Sans", sans-serif;
+}
+
+entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption {
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal .modal-event-title {
+  font-family: "DM Serif Display", serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 400;
+}
+
+.entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption {
+  font-weight: 400;
+}
+.entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption h1, .entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption h2 {
+  font-weight: 400;
+}
+
+#page-sidebar .widget .widget-head .widget-title {
+  font-weight: 400;
+}
+
+.page-template-page-pagebuilder-cards #page-page-builder-cards #primary #main .page .entry-content .widget h3.widget-title {
+  font-weight: 400;
+}
+
+#page #content .panel-grid .infographic-row .widget .widget-title {
+  font-weight: 400;
+}

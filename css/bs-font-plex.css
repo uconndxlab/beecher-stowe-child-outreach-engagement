@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#footers #mega-footer .widget .widget-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+#footers #mega-footer .widget .uc-cal .uc-cal-event .uc-cal-event-date .uc-cal-event-month {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500 !important;
+}
+
+#page #content .panel-grid .widget .uctoday-plugin .uctoday-cell-title {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+#page #content .panel-grid .panel-grid-cell .uctoday-plugin .uctoday-title-container .uctoday-cell-date {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .panel-heading .panel-title a {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget.widget_dpe_fp_widget ul .hentry {
+  font-weight: 500;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal.uc-listcal .uc-cal-list .uc-cal-item .uc-cal-event .uc-cal-event-date {
+  font-weight: 500 !important;
+}
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal .uc-cal-event {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+#page-sidebar .widget .uc-cal .uc-cal-event {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+body.page-template-page-blank .siteorigin-panels-stretch .widget_widget_sp_image .widget_sp_image-description .cap-wrap p span {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+blockquote {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+blockquote:before, blockquote:after {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+entry-content .widget.widget_metaslider_widget .metaslider .caption-wrap .caption {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.modal .modal-event-title {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+.uc-listcal .uc-cal-list .uc-cal-item .uc-cal-event-title {
+  margin-left: 2.1em;
+}
+
+#page-sidebar .widget .uc-cal.uc-listcal {
+  padding-left: 0.5em !important;
+}
+
+#footers #mega-footer .widget .uc-cal .uc-cal-item .uc-cal-event .uc-cal-event-date .uc-cal-event-month,
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal .uc-cal-item .uc-cal-event .uc-cal-event-date .uc-cal-event-month {
+  padding-top: 2px !important;
+}
+
+#footers #mega-footer .widget .uc-cal .uc-cal-item .uc-cal-event .uc-cal-event-date .uc-cal-event-day,
+#page #content .entry-content .panel-layout .panel-grid .panel-grid-cell .widget .uc-cal .uc-cal-item .uc-cal-event .uc-cal-event-date .uc-cal-event-day {
+  padding: 2px 0px 3px !important;
+}
+
+.uc-iconcal .uc-cal-event-month {
+  font-size: 11px;
+}
