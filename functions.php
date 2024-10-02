@@ -13,7 +13,7 @@ add_action('wp_enqueue_scripts', 'link_parent_theme_style');
 
 
 /** version */
-define('stowe_OUTREACH_ENGAGEMENT', '1.0.0');
+define('stowe_OUTREACH_ENGAGEMENT_VERSION', '1.0.0');
 
 
 function sandc_titlebar_register( $wp_customize ){
@@ -104,7 +104,7 @@ add_action('wp_enqueue_scripts', 'stowe_child_outreach_engagement_enqueue_script
 
 function stowe_child_outreach_engagement_enqueue_scripts()
 {
-    wp_enqueue_script('htmx', 'https://unpkg.com/htmx.org/dist/htmx.min.js', array(), stowe_CHILD_STRATEGIC_PLAN_VERSION, true);
+    wp_enqueue_script('htmx', 'https://unpkg.com/htmx.org/dist/htmx.min.js', array(), stowe_OUTREACH_ENGAGEMENT_VERSION, true);
 }
 
 

@@ -7,13 +7,13 @@ wp_enqueue_style('archive-oe_scholar', get_stylesheet_directory_uri() . '/archiv
 <div class="scholars-directory">
     <h1>Community Engaged Scholar Directory</h1>
     <div id="overview">
-        <p>The Community Engaged Scholar Directory showcases individuals from
-            across the University of Connecticut system whose academic scholarship incorporates
-            the University's Engagement standards. This directory's purpose is to help foster professional
-            connections and advance the public engagement agenda at the University of Connecticut. To be included
-            in the scholar directory, please complete <a href="#">this form</a> so that an Office of Public Engagement staff member can accurately
-            mark the issue areas your work addresses.
-        </p>
+        <!-- load the content of the page with the slug 'scholar-directory-overview' -->
+        <?php
+            $page = get_page_by_path('scholar-directory-overview');
+            if ($page) {
+                echo apply_filters('the_content', $page->post_content);
+            }
+        ?>
     </div>
 
     <div id="filter-section">
@@ -28,6 +28,7 @@ wp_enqueue_style('archive-oe_scholar', get_stylesheet_directory_uri() . '/archiv
                         $areas = get_posts(array(
                             'post_type' => 'oe_scholar',
                             'posts_per_page' => -1,
+                            
                             'meta_key' => 'areas_of_scholarship',
                             'fields' => 'ids',
                             'meta_query' => array(
@@ -53,6 +54,8 @@ wp_enqueue_style('archive-oe_scholar', get_stylesheet_directory_uri() . '/archiv
                         }
                         ?>
                     </select>
+                    <!-- export current results to csv -->
+
                 </div>
                 <div class="filter">
                     <label for="school_college">School/College:</label>
@@ -140,7 +143,10 @@ $args = array(
     'post_type' => 'oe_scholar',
     'meta_query' => $meta_query,
     'posts_per_page' => 12,
-    'paged' => get_query_var('paged') ? get_query_var('paged') : 1
+    'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+    'orderby' => 'meta_value',
+    'meta_key' => 'last_name',
+    'order' => 'ASC'
 );
 
 $query = new WP_Query($args);
